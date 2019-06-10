@@ -8,8 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body background="assets/images/mlb-teams-logos-images.jpg">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body background="assets/images/mlb-teams-logos-images.jpg"> 
+        
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -18,10 +20,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <div class="jumbotron py-4 bg-white">
-        <h1 class="display-3 text-center">Sports Trivia</h1>     
+        <h1 class="display-3 text-center">Baseball Trivia</h1>     
     </div>
-
-    <div class="container bg-white"></div>
-
+    <div class="container">
+       <div id=jumbo> 
+            <div class="jumbotron text-center">
+                <button class="btn start">Start Game</button>
+                    <h2>Time Remaining</h2> 
+                        <h2 id="timer"></h2>
+                            <div id="question"></div>
+                            <div id="option1"></div>
+                            <div id="option2"></div>
+                            <div id="option3"></div>
+                            <div id="option4"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
